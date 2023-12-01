@@ -1,15 +1,11 @@
 window.onload = () => {
     let button = document.querySelector("#btn");
-  
-    // Fonction pour 
     button.addEventListener("click", CalculerIMC);
 };
 
 function CalculerIMC () {
-
     let taille = parseInt(document.querySelector("#taille").value)
     let poids = parseInt(document.querySelector("#poids").value)
-
     let result = document.querySelector("#result")
 
     if (taille === "" || isNaN(taille)) 
